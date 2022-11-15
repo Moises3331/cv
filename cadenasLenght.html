@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Cadenas | Lengh, toUpperCase & toLowerCase</title>
+	<meta charset="utf-8">
+	<script>
+		var correo1 = "ksjdjsjdfs@gmail.com"	
+		var correo2 = "Moises@gmail.com"
+		var pos = correo2.indexOf("@");
+		var punto = correo2.indexOf("com",pos); //busca despues de la posicion pos. en adelante
+		console.log(pos); //te da -1 si no encuentra el caracter/valor;
+		console.log(punto);
+
+		var servicio = correo2.slice(pos+1); //obtiene el valor despues de la posicion indicada
+
+		var usuario = correo2.substr(0,pos).toUpperCase(); //substrae el valor de la cadena hasta el valor de pos  que es  el @
+
+
+		console.log("Tu servicio es: ", servicio); 
+		console.log("Tu usuario es: ", usuario); 
+
+		//console.log(Number(servicio));  //convierte el valor de sercivio a numero si, no es posible te regresa un NaN
+		//console.log(Number(servicio) + 100000000);
+
+
+
+
+
+		if (correo1.toUpperCase() == correo2.toUpperCase()) {
+			document.write("las claves coinciden<br>");
+
+		} else {
+			document.write("las claves NO coinciden<br>");
+		}
+		document.write("La longitud de la clave  " + correo1+ " es de "+correo1.length + " caracteres<br>");
+		if (correo1.length > 12) {
+			document.write("la clave es muy corta ");
+		} else {
+			document.write("la clave es correcta ");
+		}
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
